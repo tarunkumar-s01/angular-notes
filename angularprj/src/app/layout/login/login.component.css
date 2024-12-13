@@ -1,0 +1,67 @@
+/* General Styles */
+
+
+/* Form Container */
+.mainbox {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Labels */
+.form-label {
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 0.5rem;
+}
+
+/* Inputs */
+.form-control {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.form-control:focus {
+    border-color: #6c63ff;
+    box-shadow: 0 0 5px rgba(108, 99, 255, 0.5);
+    outline: none;
+}
+
+/* Button */
+button[type="submit"] {
+    background-color: #6c63ff;
+    color: #ffffff;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #5a54e0;
+    box-shadow: 0 4px 8px rgba(90, 84, 224, 0.4);
+}
+
+button[type="submit"]:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .mainbox {
+        padding: 1.5rem;
+    }
+}

@@ -1,0 +1,56 @@
+{
+  "products": [
+    {
+      "id": "101",
+      "pname": "laptop pc",
+      "price": 50000,
+      "pcompany": "hp",
+      "pquan": 10
+    },
+    {
+      "pname": "mouses",
+      "price": 20000,
+      "pcompany": "intel",
+      "pquan": 15,
+      "id": "102"
+    },
+    {
+      "id": "103",
+      "pname": "usb",
+      "price": 20000,
+      "pcompany": "intel",
+      "pquan": 15
+    },
+    {
+      "id": "104",
+      "pname": "printer",
+      "price": 20000,
+      "pcompany": "intel",
+      "pquan": 15
+    },
+    {
+      "id": "205c",
+      "pname": "dell",
+      "price": "20000",
+      "pcompany": "changepond",
+      "pquan": "10"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "userid": "admin@gmail.com",
+      "userpass": "admin@123"
+    },
+    {
+      "id": "2",
+      "userid": "naanthaa@gmail.com",
+      "userpass": "naanthaa@123"
+    },
+    {
+      "id": "3",
+      "userid": "vijay@gmail.com",
+      "userpass": "vijay@123"
+    }
+  ]
+}

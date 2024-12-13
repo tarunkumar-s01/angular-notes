@@ -1,0 +1,10 @@
+<p>databindng works!</p>
+<strong>{{myname}}</strong><br>
+<strong>{{100+200}}</strong> <br>
+
+<!-- <img src="../../assets/images/1.jpg" alt="cricket"><br> -->
+ <img [src]="imgpath" [alt]="imgname"> <br>
+ <input type="text" name="items" [(ngModel)]="inputdata"> {{inputdata}}<br>
+
+
+<button type="button" (click)="greeting('tarun kumar')">click me</button>

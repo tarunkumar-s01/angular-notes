@@ -1,0 +1,19 @@
+<p>productedd works!</p>
+
+<form #pdata="ngForm" (ngSubmit)="addData(pdata.value)" class="box">
+
+    <label class="form-label">eneter product name:</label>
+    <input type="text" name="pname" class="form-control" ngModel>
+
+    <label class="form-label">eneter product price:</label>
+    <input type="text" name="price" class="form-control" ngModel>
+
+    <label class="form-label">eneter product company:</label>
+    <input type="text" name="pcompany" class="form-control" ngModel>
+
+    <label class="form-label">eneter product quantity:</label>
+    <input type="text" name="pquan" class="form-control" ngModel>
+
+    <button type="submit" class="btn btn-primary mt-2">add product</button>
+
+</form>

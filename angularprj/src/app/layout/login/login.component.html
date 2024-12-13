@@ -1,0 +1,13 @@
+<p>login works!</p>
+
+<div>
+    <form class="mainbox">
+        <label for="names" class="form-label">Enter your username : </label>
+        <input type="text" id="names" name="name" class="form-control" [(ngModel)]="name">
+        <label for="pass" class="form-label">Enter your password :</label>
+        <input type="text" id="pass" name="pass" class="form-control" [(ngModel)]="pass">
+        <button type="submit" (click)="checkUser()">submit</button>
+    </form>
+
+</div>
+

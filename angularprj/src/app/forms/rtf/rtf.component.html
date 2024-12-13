@@ -1,0 +1,39 @@
+<p>rtf works!</p>
+
+<form [formGroup]="empForm" (ngSubmit)="getdata()" class="box">
+    <div>
+        <label>Enter your firstname : </label>
+        <input type="text" name="fname" formControlName="fname" class="form-control">
+        <div *ngIf="empForm.get('fname').touched && empForm.get('fname').invalid">
+            <div *ngIf="empForm.get('fname').errors.required" class="alert alert-danger">fname is required</div>
+            <div *ngIf=" empForm.get('fname').errors.pattern" class="alert alert-danger">fname is in correct format</div>
+
+        </div>
+
+    </div>
+    <div>
+        <label>Enter your lastname : </label>
+        <input type="text" name="lname" formControlName="lname" class="form-control">
+        <div *ngIf="empForm.get('lname').touched && empForm.get('lname').invalid">
+            <div *ngIf="empForm.get('lname').errors.required" class="alert alert-danger">lname is required</div>
+            <div *ngIf=" empForm.get('lname').errors.pattern" class="alert alert-danger">lname is in correct format</div>
+
+        </div>
+
+    </div>
+    <div>
+        <label class="form-check-label">
+        <input type="checkbox" name="term" formControlName="term" class="form-check-input">I accept terms and conditions
+        </label>
+        <div *ngIf="empForm.get('term').touched && empForm.get('term').invalid">
+            <div *ngIf="empForm.get('term').errors.required" class="alert alert-danger">select terms and condition</div>
+           
+
+        </div>
+
+    </div>
+    <button type="submit" class="btn btn-light">submit</button>
+   
+   
+
+</form>

@@ -1,0 +1,10 @@
+<p>switchtask works!</p>
+
+<button type="button" (click)="display()"><strong>Bikes</strong></button>
+<button type="button" (click)="display2()" ><strong>Cars</strong></button>
+
+<ul>
+    <li *ngFor=" let car of items" (click)="selectItem(car)">{{car}}</li>
+</ul>
+
+<p *ngIf="selectedName">You have selected: <strong>{{ selectedName }}</strong></p>
