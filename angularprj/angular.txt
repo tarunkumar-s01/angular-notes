@@ -163,6 +163,37 @@ ________________________________________________________________________________
           -2.FormControl:it willl hold information of individual input element. 
 
 
+ngUntouched     ngprestine      nginvalid
+ngtouched     ngDirty      ngvalid
+
+classlife cycle methods.
+1. ngOnInit
+
+
+
+
+
+
+*Service : 
+    -in angular service in a special class with special/extra power
+    -it is used for multiple uses,
+        1.to share a data with multiple components
+        2.we can implement business logic in it
+        3.we can perform external communication(database connection)
+
+*how to create service  
+    -npx ng service serviceName.
+
+*how to access data from service into angular component
+    -if you want to access service data into angular component for this first we have to import service in component ts file and create instance of service class.
+
+*How to make fake API request from Angular to server
+    - to send request from angular service to server for this wer have to ceate HTTPClient class in service constructor. but HTTPClient class is not a part of core angular. It is part of HttpClientModule,
+    -so first we have to import providerHttpClient as well as withJsonpSupport in app.config.ts file and make entry  of these library in provider array.
+    =>provideHttpClient(withJsonpSupport()),
+
+
+
 
 
 
